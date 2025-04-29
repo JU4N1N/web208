@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whats API</title>
+</head>
+<body>
+    
+    <header style="text-align: center;">
+        <h1 style="color: rgb(6, 180, 6);">WhatsApp API</h1>
+    </header>
+
+    <div style="margin-top: 50px; text-align: center;">
+        <div>
+            <label for="tel">Número de teléfono: </label>
+            <br>
+            <input style="border-width: 3px; border-color: green;" 
+            type="number" id="numTel"  placeholder="Número telefónico" oninput="limitarNumero(this)">
+        </div>
+
+        <div style="text-align: center;">
+            <label for="sms">Mensaje: </label>
+            <br>
+            <textarea style="border-radius: 5px;  border-color: green; border-width: 4px;" 
+            name="Mensaje" id="mensaje" rows="4" required placeholder="Redacta tu mensaje"></textarea>
+        </div>
+
+        <div>
+            <button style="background-color: aquamarine;" id="btn" onclick="enviar()">Enviar</button>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
