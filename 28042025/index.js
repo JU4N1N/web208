@@ -2,7 +2,7 @@
 const serverCreadoHTTP = require('http');
 
 //Definimos el puerto donde va ha tener salida nuestro servidor
-const portSalida = 3008;
+const portSalida = 5004;
 
 //Crear el servidor
 const servidorCreado = serverCreadoHTTP.createServer((req,res)=>{
